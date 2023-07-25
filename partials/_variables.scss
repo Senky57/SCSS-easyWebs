@@ -1,0 +1,23 @@
+//Theme: light, dark
+$theme: dark;
+
+// for LIGHT THEME
+// ------------- COLORS -------------
+$body-background: #fff;
+$header-footer-background: rgba(200, 91, 91, 0.652);
+$button-hover-background: rgba(200, 91, 91, 0.652);
+$text-head-foot-color: #fff;
+$text-color: black;
+$ordinary-border: 2px solid black;
+
+// ------------- SIZES -------------
+$header-height: 80px;
+$footer-height: 80px;
+
+// for DARK THEME
+@if $theme == dark{
+    $body-background:black;
+    $text-color: #fff;
+    $ordinary-border: 2px solid #fff;
+    $header-footer-background: darken(rgba(200, 91, 91), 5%);
+} 
